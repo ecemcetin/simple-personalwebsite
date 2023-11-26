@@ -1,0 +1,14 @@
+.headerLogo {
+  font-family: "MuseoModerno", sans-serif;
+  color: white;
+  font-size: 30px;
+  span {
+    &:nth-child(1) {
+      color: white;
+    }
+
+    &:nth-child(2) {
+      color: #98ff9c;
+    }
+  }
+}

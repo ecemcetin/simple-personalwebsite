@@ -4,7 +4,7 @@
 @import "abstracts/mq-scss/mq";
 @import "abstracts/mq-scss/mixin";
 @import "abstracts/responsive-variable/responsive-variable";
-@import "abstracts/color-palette/textPalette";
+@import "abstracts/color-palette/colorPalette";
 @import "abstracts/fonts/fonts.css";
 
 @import "global";
@@ -12,6 +12,6 @@
 @import "base/texts/descriptionText";
 @import "base/col/customCol";
 
-
 @import "layout/header/header";
 @import "layout/header/navbar";
+@import "layout/header/headerLogo";

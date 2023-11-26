@@ -4,7 +4,7 @@
 /*/Flexbox*/
 @import "abstracts/fonts/fonts.css";
 .body {
-  background-color: #11001C;
+  background-color: #11001c;
 }
 
 @media (min-width: 1600px) {
@@ -19,7 +19,7 @@
   }
 }
 .descriptionText {
-  color: #11001C;
+  color: #11001c;
   font-family: "Roboto Mono", monospace;
   font-size: 45px;
   font-weight: 400;
@@ -490,6 +490,7 @@
   }
 }
 .header {
+  margin-top: 35px;
   position: sticky;
   top: 0;
 }
@@ -503,4 +504,16 @@
 }
 .navbar-items li a {
   text-decoration: none;
+}
+
+.headerLogo {
+  font-family: "MuseoModerno", sans-serif;
+  color: white;
+  font-size: 30px;
+}
+.headerLogo span:nth-child(1) {
+  color: white;
+}
+.headerLogo span:nth-child(2) {
+  color: #98ff9c;
 }/*# sourceMappingURL=main.css.map */
