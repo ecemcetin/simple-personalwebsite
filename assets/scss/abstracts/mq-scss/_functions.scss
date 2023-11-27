@@ -13,7 +13,7 @@
 // Derived from Bourbon by thoughtbot (http://bourbon.io)
 @function _mq-em($pxval, $base: $mq-em-base) {
   //alteration to prevent strings from causing an error
-  @if (type-of($pxval) == "string") {
+  @if (type-of($pxval) == 'string') {
     @return $pxval;
   }
 
@@ -30,7 +30,7 @@
 //http://hugogiraudel.com/2014/01/15/sass-string-to-number/
 @function number($string) {
   // Matrices
-  $strings: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+  $strings: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';
   $numbers: 0 1 2 3 4 5 6 7 8 9;
 
   // Result

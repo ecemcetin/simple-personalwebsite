@@ -2,7 +2,7 @@
 /*display*/
 /*Flexbox*/
 /*/Flexbox*/
-@import "abstracts/fonts/fonts.css";
+@import 'abstracts/fonts/fonts.css';
 .body {
   background-color: #11001c;
 }
@@ -20,7 +20,7 @@
 }
 .descriptionText {
   color: #11001c;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 45px;
   font-weight: 400;
 }
@@ -507,7 +507,7 @@
 }
 
 .headerLogo {
-  font-family: "MuseoModerno", sans-serif;
+  font-family: 'MuseoModerno', sans-serif;
   color: white;
   font-size: 30px;
 }
