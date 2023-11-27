@@ -1,16 +1,16 @@
-.body{
-    background-color: $color-main;
+.body {
+  background-color: $color-main;
 }
 
 @media (min-width: 1600px) {
-    /* expanding BS4 max-width */
-    .container {
-        max-width: 1600px;
-    }
+  /* expanding BS4 max-width */
+  .container {
+    max-width: 1600px;
+  }
 }
 
 @media (min-width: 1800px) {
-    .container {
-        max-width: 1740px;
-    }
+  .container {
+    max-width: 1740px;
+  }
 }
