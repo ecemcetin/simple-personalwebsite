@@ -1,0 +1,37 @@
+.navbar-items {
+  display: none;
+}
+
+/* Hamburger icon styles */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Styling for the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Styles for the hamburger icon */
+#menu-toggle:checked ~ .navbar-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#menu-toggle:checked + label {
+  background-color: #007bff;
+}
+
+/* Display hamburger icon only on small screens */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  #menu-toggle:checked .navbar-items {
+    display: block;
+  }
+}

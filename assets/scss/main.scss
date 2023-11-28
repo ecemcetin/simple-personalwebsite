@@ -4,7 +4,7 @@
 @import 'abstracts/mq-scss/mq';
 @import 'abstracts/mq-scss/mq.import';
 @import 'abstracts/mq-scss/mixin';
-@import 'abstracts/responsive-variable/responsive-variable';
+@import 'abstracts/mq-scss/variables/variables';
 @import 'abstracts/color-palette/colorPalette';
 @import 'abstracts/fonts/fonts.css';
 
@@ -14,5 +14,11 @@
 @import 'base/col/customCol';
 
 @import 'layout/header/header';
-@import 'layout/header/navbar';
-@import 'layout/header/headerLogo';
+@import 'layout/section/section';
+
+@import 'components/header/hamburger-menu';
+@import 'components/header/header-logo';
+@import 'components/header/navbar';
+
+@import 'pages/home/items/background-item';
+@import 'pages/home/items/profile-picture';
