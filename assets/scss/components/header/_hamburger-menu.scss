@@ -1,37 +1,57 @@
-.navbar-items {
-  display: none;
-}
-
-/* Hamburger icon styles */
-.hamburger-menu {
-  display: none;
-  cursor: pointer;
-  color: white;
-}
-
-/* Styling for the checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Styles for the hamburger icon */
-#menu-toggle:checked ~ .navbar-items {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#menu-toggle:checked + label {
-  background-color: #007bff;
-}
-
-/* Display hamburger icon only on small screens */
-@media (max-width: 768px) {
+.responsive-menu {
   .hamburger-menu {
-    display: block;
+    display: none;
+    span {
+      background: #fff;
+      border-radius: 10px;
+      height: 2.5px;
+      margin: 2px 0;
+      transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+
+    span:nth-of-type(1) {
+      width: 50%;
+    }
+
+    span:nth-of-type(2) {
+      width: 100%;
+    }
+
+    span:nth-of-type(3) {
+      width: 75%;
+    }
+
+    &-checkbox {
+      display: none;
+    }
+
+    @include mq(max-width, $lg) {
+      display: flex;
+      color: $color-main-light;
+      flex-direction: column;
+      width: 25px;
+      cursor: pointer;
+    }
+  }
+  .hamburger-menu-checkbox {
+    display: none;
   }
 
-  #menu-toggle:checked .navbar-items {
-    display: block;
+  .hamburger-menu-checkbox:checked + .hamburger-menu span:nth-of-type(1) {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(3px, -4px) rotate(45deg);
+  }
+
+  .hamburger-menu-checkbox:checked + .hamburger-menu span:nth-of-type(2) {
+    transform-origin: top;
+    transform: translate(0px, -5px) rotate(-45deg);
+  }
+
+  .hamburger-menu-checkbox:checked + .hamburger-menu span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 60%;
+    transform: translate(11px, -8px) rotate(45deg);
   }
 }
+/* Hamburger menü stilini buraya ekleyebilirsiniz */

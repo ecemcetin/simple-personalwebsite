@@ -1,4 +1,8 @@
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   &-items {
     padding: 0px 35px;
     width: 55%;
@@ -8,34 +12,46 @@
     border: 0.25px solid $color-main-light;
     height: 40px;
     border-radius: 10px;
+
     &:hover {
       border: 0.25px solid $color-main-auxiliary;
       transition: all 2s;
       -webkit-transition: all 2s;
     }
-    &:not(hover) {
+
+    &:not(:hover) {
       border: 0.25px solid $color-main-light;
       transition: border 2s ease;
     }
+
     li {
       display: flex;
       align-items: center;
       list-style: none;
       margin: 0 25px;
       cursor: pointer;
+
       a {
         color: $color-text-light;
         font-family: 'Nunito', sans-serif;
         font-weight: 100;
         font-size: 15px;
         text-decoration: none;
+
+        &:hover {
+          color: $color-main-auxiliary;
+          transition: all 1s;
+          -webkit-transition: all 1s;
+        }
       }
+
       &:hover {
         a {
           color: $color-main-auxiliary;
           transition: all 1s;
           -webkit-transition: all 1s;
         }
+
         .navbar-icon {
           opacity: 1;
           transition: all 1s;
@@ -44,9 +60,64 @@
       }
     }
   }
+
   &-icon {
     max-width: 18px;
     margin-right: 5px;
     opacity: 0;
+  }
+}
+
+@include mq(max-width, $lg) {
+  .navbar-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: $color-main;
+    z-index: 9999;
+  }
+
+  .navbar-items.show {
+    display: flex;
+  }
+  .show {
+    input[type='checkbox'] {
+      display: none;
+    }
+
+    input[type='checkbox']:checked ~ span:nth-of-type(1) {
+      transform-origin: bottom;
+      transform: rotatez(45deg) translate(8px, 0px);
+    }
+
+    input[type='checkbox']:checked ~ span:nth-of-type(2) {
+      transform-origin: top;
+      transform: rotatez(-45deg);
+    }
+
+    input[type='checkbox']:checked ~ span:nth-of-type(3) {
+      transform-origin: bottom;
+      width: 50%;
+      transform: translate(30px, -11px) rotatez(45deg);
+    }
+  }
+
+  .navbar {
+    &-items {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      li {
+        margin: 10px 0;
+      }
+    }
   }
 }

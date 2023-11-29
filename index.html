@@ -24,37 +24,40 @@
   </head>
 
   <body class="body">
-    <header class="header container">
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger-menu">&#9776;</label>
-
-
-      <nav class="navbar">
-        <div class="headerLogo">
-          <span>IT'S ME</span>
-          <span>NAME</span>
-        </div>
-        <ul class="navbar-items">
-          <li>
-            <img class="navbar-icon" src="assets/images/icons/home.png" />
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <img class="navbar-icon" src="assets/images/icons/aboutme.png" />
-            <a href="#about">About me</a>
-          </li>
-          <li>
-            <img class="navbar-icon" src="assets/images/icons/works.png" />
-            <a href="#services">Works</a>
-          </li>
-          <li>
-            <img class="navbar-icon" src="assets/images/icons/contact.png" />
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    
+   <header class="header container">
+    <nav class="navbar">
+      <div class="headerLogo">
+        <span>IT'S ME</span>
+        <span>NAME</span>
+      </div>
+      <ul for="menu-toggle" class="navbar-items">
+        <li>
+          <img class="navbar-icon" src="assets/images/icons/home.png" />
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <img class="navbar-icon" src="assets/images/icons/aboutme.png" />
+          <a href="#about">About me</a>
+        </li>
+        <li>
+          <img class="navbar-icon" src="assets/images/icons/works.png" />
+          <a href="#services">Works</a>
+        </li>
+        <li>
+          <img class="navbar-icon" src="assets/images/icons/contact.png" />
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+        <div class="responsive-menu">
+            <input type="checkbox" class="hamburger-menu-checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+    </div>
+  </header>
     <main class="section">
       <div class="container">
         <div class="homepage-section">
@@ -77,8 +80,21 @@
       <p>&copy; 2023 Proje Adı. Tüm hakları saklıdır.</p>
     </footer>
 
-    <!-- Ek JS dosyalarını buraya ekleyebilirsiniz -->
-    <!-- Örneğin: <script src="script.js"></script> -->
     <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+      <script>
+   const navbarItems = document.querySelector('.navbar-items');
+const menuToggle = document.getElementById('menu-toggle');
+
+menuToggle.addEventListener('change', function() {
+  navbarItems.classList.toggle('show', this.checked);
+  if (!this.checked) {
+    navbarItems.style.display = 'none';
+  } else {
+    navbarItems.style.display = 'flex';
+  }
+});
+
+  </script>
+
   </body>
 </html>

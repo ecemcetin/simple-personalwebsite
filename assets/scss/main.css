@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*display*/
 /*display*/
 /*Flexbox*/
@@ -491,8 +492,8 @@
 }
 .header {
   margin-top: 35px;
-  position: sticky;
   top: 0;
+  display: flex;
 }
 
 .section {
@@ -501,42 +502,65 @@
   min-height: 100vh;
 }
 
-.navbar-items {
+.responsive-menu .hamburger-menu {
   display: none;
 }
-
-/* Hamburger icon styles */
-.hamburger-menu {
-  display: none;
-  cursor: pointer;
-  color: white;
+.responsive-menu .hamburger-menu span {
+  background: #fff;
+  border-radius: 10px;
+  height: 2.5px;
+  margin: 2px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
-
-/* Styling for the checkbox */
-#menu-toggle {
-  display: none;
+.responsive-menu .hamburger-menu span:nth-of-type(1) {
+  width: 50%;
 }
-
-/* Styles for the hamburger icon */
-#menu-toggle:checked ~ .navbar-items {
-  display: flex;
-  flex-direction: column;
+.responsive-menu .hamburger-menu span:nth-of-type(2) {
   width: 100%;
 }
-
-#menu-toggle:checked + label {
-  background-color: #007bff;
+.responsive-menu .hamburger-menu span:nth-of-type(3) {
+  width: 75%;
+}
+.responsive-menu .hamburger-menu-checkbox {
+  display: none;
+}
+@media (max-width: 62em) {
+  .responsive-menu .hamburger-menu {
+    display: flex;
+    color: #ffffed;
+    flex-direction: column;
+    width: 25px;
+    cursor: pointer;
+  }
+}
+.responsive-menu .hamburger-menu-checkbox {
+  display: none;
+}
+.responsive-menu
+  .hamburger-menu-checkbox:checked
+  + .hamburger-menu
+  span:nth-of-type(1) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(3px, -4px) rotate(45deg);
+}
+.responsive-menu
+  .hamburger-menu-checkbox:checked
+  + .hamburger-menu
+  span:nth-of-type(2) {
+  transform-origin: top;
+  transform: translate(0px, -5px) rotate(-45deg);
+}
+.responsive-menu
+  .hamburger-menu-checkbox:checked
+  + .hamburger-menu
+  span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 60%;
+  transform: translate(11px, -8px) rotate(45deg);
 }
 
-/* Display hamburger icon only on small screens */
-@media (max-width: 768px) {
-  .hamburger-menu {
-    display: block;
-  }
-  #menu-toggle:checked .navbar-items {
-    display: block;
-  }
-}
+/* Hamburger menü stilini buraya ekleyebilirsiniz */
 .headerLogo {
   font-family: 'MuseoModerno', sans-serif;
   color: white;
@@ -549,6 +573,12 @@
   color: #98ff9c;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 .navbar-items {
   padding: 0px 35px;
   width: 55%;
@@ -564,7 +594,7 @@
   transition: all 2s;
   -webkit-transition: all 2s;
 }
-.navbar-items:not(hover) {
+.navbar-items:not(:hover) {
   border: 0.25px solid #ffffed;
   transition: border 2s ease;
 }
@@ -582,6 +612,11 @@
   font-size: 15px;
   text-decoration: none;
 }
+.navbar-items li a:hover {
+  color: #98ff9c;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
 .navbar-items li:hover a {
   color: #98ff9c;
   transition: all 1s;
@@ -598,15 +633,60 @@
   opacity: 0;
 }
 
+@media (max-width: 62em) {
+  .navbar-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #11001c;
+    z-index: 9999;
+  }
+  .navbar-items.show {
+    display: flex;
+  }
+  .show input[type='checkbox'] {
+    display: none;
+  }
+  .show input[type='checkbox']:checked ~ span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(8px, 0px);
+  }
+  .show input[type='checkbox']:checked ~ span:nth-of-type(2) {
+    transform-origin: top;
+    transform: rotatez(-45deg);
+  }
+  .show input[type='checkbox']:checked ~ span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(30px, -11px) rotatez(45deg);
+  }
+  .navbar-items {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-items li {
+    margin: 10px 0;
+  }
+}
 .background-item {
   position: absolute;
   right: 0;
   width: 50%;
   height: 77%;
+  z-index: -99;
 }
 
 .homepage-profile-picture {
   position: absolute;
   right: 20px;
   top: 65px;
+  z-index: -9;
 } /*# sourceMappingURL=main.css.map */
