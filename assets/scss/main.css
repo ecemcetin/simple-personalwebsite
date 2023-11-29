@@ -665,16 +665,6 @@
     width: 50%;
     transform: translate(30px, -11px) rotatez(45deg);
   }
-  .navbar-items {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  .navbar-items li {
-    margin: 10px 0;
-  }
 }
 .background-item {
   position: absolute;
