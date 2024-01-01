@@ -21,7 +21,7 @@
 }
 .descriptionText {
   color: #11001c;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 45px;
   font-weight: 400;
 }
@@ -491,6 +491,8 @@
   }
 }
 .header {
+  position: sticky;
+  top: 20px;
   margin-top: 35px;
   top: 0;
   display: flex;
@@ -536,25 +538,16 @@
 .responsive-menu .hamburger-menu-checkbox {
   display: none;
 }
-.responsive-menu
-  .hamburger-menu-checkbox:checked
-  + .hamburger-menu
-  span:nth-of-type(1) {
+.responsive-menu .hamburger-menu-checkbox:checked + .hamburger-menu span:nth-of-type(1) {
   transform-origin: bottom;
   width: 50%;
   transform: translate(3px, -4px) rotate(45deg);
 }
-.responsive-menu
-  .hamburger-menu-checkbox:checked
-  + .hamburger-menu
-  span:nth-of-type(2) {
+.responsive-menu .hamburger-menu-checkbox:checked + .hamburger-menu span:nth-of-type(2) {
   transform-origin: top;
   transform: translate(0px, -5px) rotate(-45deg);
 }
-.responsive-menu
-  .hamburger-menu-checkbox:checked
-  + .hamburger-menu
-  span:nth-of-type(3) {
+.responsive-menu .hamburger-menu-checkbox:checked + .hamburger-menu span:nth-of-type(3) {
   transform-origin: bottom;
   width: 60%;
   transform: translate(11px, -8px) rotate(45deg);
@@ -562,7 +555,7 @@
 
 /* Hamburger menü stilini buraya ekleyebilirsiniz */
 .headerLogo {
-  font-family: 'MuseoModerno', sans-serif;
+  font-family: "MuseoModerno", sans-serif;
   color: white;
   font-size: 30px;
 }
@@ -607,7 +600,7 @@
 }
 .navbar-items li a {
   color: #f9f8e9;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 100;
   font-size: 15px;
   text-decoration: none;
@@ -649,18 +642,18 @@
   .navbar-items.show {
     display: flex;
   }
-  .show input[type='checkbox'] {
+  .show input[type=checkbox] {
     display: none;
   }
-  .show input[type='checkbox']:checked ~ span:nth-of-type(1) {
+  .show input[type=checkbox]:checked ~ span:nth-of-type(1) {
     transform-origin: bottom;
     transform: rotatez(45deg) translate(8px, 0px);
   }
-  .show input[type='checkbox']:checked ~ span:nth-of-type(2) {
+  .show input[type=checkbox]:checked ~ span:nth-of-type(2) {
     transform-origin: top;
     transform: rotatez(-45deg);
   }
-  .show input[type='checkbox']:checked ~ span:nth-of-type(3) {
+  .show input[type=checkbox]:checked ~ span:nth-of-type(3) {
     transform-origin: bottom;
     width: 50%;
     transform: translate(30px, -11px) rotatez(45deg);
@@ -679,4 +672,4 @@
   right: 20px;
   top: 65px;
   z-index: -9;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

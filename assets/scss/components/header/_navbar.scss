@@ -33,7 +33,7 @@
 
       a {
         color: $color-text-light;
-        font-family: 'Nunito', sans-serif;
+        font-family: "Nunito", sans-serif;
         font-weight: 100;
         font-size: 15px;
         text-decoration: none;
@@ -86,21 +86,21 @@
     display: flex;
   }
   .show {
-    input[type='checkbox'] {
+    input[type="checkbox"] {
       display: none;
     }
 
-    input[type='checkbox']:checked ~ span:nth-of-type(1) {
+    input[type="checkbox"]:checked ~ span:nth-of-type(1) {
       transform-origin: bottom;
       transform: rotatez(45deg) translate(8px, 0px);
     }
 
-    input[type='checkbox']:checked ~ span:nth-of-type(2) {
+    input[type="checkbox"]:checked ~ span:nth-of-type(2) {
       transform-origin: top;
       transform: rotatez(-45deg);
     }
 
-    input[type='checkbox']:checked ~ span:nth-of-type(3) {
+    input[type="checkbox"]:checked ~ span:nth-of-type(3) {
       transform-origin: bottom;
       width: 50%;
       transform: translate(30px, -11px) rotatez(45deg);

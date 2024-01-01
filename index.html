@@ -1,29 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proje Başlığı</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;600&display=swap');
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Nunito:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/scss/abstracts/fonts/fonts.css" />
-    <link rel="stylesheet" href="assets/scss/main.css" />
-  </head>
 
-  <body class="body">
-   <header class="header container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proje Başlığı</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;600&display=swap');
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Nunito:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/scss/abstracts/fonts/fonts.css" />
+  <link rel="stylesheet" href="assets/scss/main.css" />
+</head>
+
+<body class="body">
+  <header class="header container">
     <nav class="navbar">
       <div class="headerLogo">
         <span>IT'S ME</span>
@@ -32,7 +31,7 @@
       <ul for="menu-toggle" class="navbar-items">
         <li>
           <img class="navbar-icon" src="assets/images/icons/home.png" />
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <img class="navbar-icon" src="assets/images/icons/aboutme.png" />
@@ -40,7 +39,7 @@
         </li>
         <li>
           <img class="navbar-icon" src="assets/images/icons/works.png" />
-          <a href="#services">Works</a>
+          <a href="#works">Works</a>
         </li>
         <li>
           <img class="navbar-icon" src="assets/images/icons/contact.png" />
@@ -48,41 +47,45 @@
         </li>
       </ul>
     </nav>
-        <div class="responsive-menu">
-            <input type="checkbox" class="hamburger-menu-checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            </label>
+    <div class="responsive-menu">
+      <input type="checkbox" class="hamburger-menu-checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </div>
   </header>
-    <main class="section">
-      <div class="container">
-        <div class="homepage-section">
-          <div class="homepage-section-text">
-            <p>Merhaba, dünya! Bu bir HTML boilerplate'dir.</p>
+  <main class="section">
+    <div class="container">
+      <div class="homepage-section">
+        <div class="homepage-section-text">
+          <div class="container" id="about">
+            <!-- Your about me section content -->
           </div>
+          <div class="container" id="works">
+            <!-- Your works/services section content -->
+          </div>
+          <div class="container" id="contact">
+            <!-- Your contact section content -->
+          </div>
+        </div>
       </div>
-      <img
-        class="background-item"
-        src="assets/images/background-items/homepage-bg-item.png"
-      />
-         <img
-        class="homepage-profile-picture"
-        src="assets/images/background-items/homepage-profile-picture.png"
-      />
+      <div class="homepage-banner">
+        <img class="background-item" src="assets/images/background-items/homepage-bg-item.png" />
+        <img class="homepage-profile-picture" src="assets/images/background-items/homepage-profile-picture.png" />
+      </div>
+  </main>
 
-    </main>
+  <footer>
+    <p>&copy; 2023 Proje Adı. Tüm hakları saklıdır.</p>
+  </footer>
 
-    <footer>
-      <p>&copy; 2023 Proje Adı. Tüm hakları saklıdır.</p>
-    </footer>
+  <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js">
 
-    <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
-      <script src="assets/js/main.js">
- 
   </script>
 
-  </body>
+</body>
+
 </html>
