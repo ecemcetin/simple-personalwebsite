@@ -498,6 +498,9 @@
   padding: 15px 20px;
   display: flex;
 }
+.header-header {
+  padding: 35px;
+}
 
 .section {
   position: relative;
