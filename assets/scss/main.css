@@ -3,7 +3,7 @@
 /*display*/
 /*Flexbox*/
 /*/Flexbox*/
-@import 'abstracts/fonts/fonts.css';
+@import "abstracts/fonts/fonts.css";
 .body {
   background-color: #11001c;
 }
@@ -497,6 +497,7 @@
   top: 0;
   padding: 15px 20px;
   display: flex;
+  z-index: 99;
 }
 .header-header {
   padding: 35px;
@@ -505,6 +506,10 @@
 .section {
   position: relative;
   width: 100%;
+  min-height: 100vh;
+}
+
+.content {
   min-height: 100vh;
 }
 
