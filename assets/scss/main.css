@@ -512,6 +512,9 @@
 .content {
   min-height: 100vh;
 }
+.content p {
+  color: white;
+}
 
 .responsive-menu .hamburger-menu {
   display: none;
@@ -672,7 +675,6 @@
   position: absolute;
   right: 0;
   width: 50%;
-  height: 77%;
   z-index: -99;
 }
 
