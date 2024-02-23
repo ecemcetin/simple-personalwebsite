@@ -6,6 +6,7 @@
 @import "abstracts/fonts/fonts.css";
 .body {
   background-color: #11001c;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1600px) {
@@ -725,6 +726,25 @@
   font-size: 14px;
   font-family: "Nunito", sans-serif;
   color: #ffffed;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffed;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #98ff9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #11001c;
 }
 
 .background-item, .background-item-aboutme {
