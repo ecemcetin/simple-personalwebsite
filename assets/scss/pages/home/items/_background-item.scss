@@ -4,4 +4,10 @@
   top: 0px;
   width: 55%;
   z-index: -99;
+  &-aboutme {
+    @extend .background-item;
+    top: calc(100vh + 400px);
+    width: 450px;
+    rotate: 185deg;
+  }
 }

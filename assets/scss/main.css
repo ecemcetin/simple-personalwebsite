@@ -512,9 +512,12 @@
 .content {
   min-height: 100vh;
 }
-.content p {
+.content .title {
   color: white;
-  padding-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
 }
 
 .responsive-menu .hamburger-menu {
@@ -672,12 +675,69 @@
     transform: translate(30px, -11px) rotatez(45deg);
   }
 }
-.background-item {
+.about-box-skills {
+  margin: 20px 0px;
+  border-radius: 10px;
+  background-color: #ffffed;
+  width: 100%;
+  height: 230px;
+  padding: 20px;
+  overflow: scroll;
+}
+.about-box-skills ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.about-box-skills ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.about-box-skills ul li img {
+  width: 30px;
+  padding-right: 10px;
+}
+.about-box-skills ul li span {
+  color: #11001c;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+.about-box-skills span {
+  color: #11001c;
+  font-size: 14px;
+}
+.about-box-career {
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  border: 1px solid #98ff9c;
+  background-color: #11001c;
+  width: 100%;
+  height: 480px;
+}
+.about-box-career h1 {
+  color: #ffffed;
+  font-family: "Nunito", sans-serif;
+  font-size: 70px;
+}
+.about-box-career span {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #ffffed;
+}
+
+.background-item, .background-item-aboutme {
   position: absolute;
   right: 0;
   top: 0px;
   width: 55%;
   z-index: -99;
+}
+.background-item-aboutme {
+  top: calc(100vh + 400px);
+  width: 450px;
+  rotate: 185deg;
 }
 
 .homepage-profile-picture {
