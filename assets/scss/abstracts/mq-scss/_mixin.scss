@@ -278,16 +278,16 @@
 }
 
 @mixin placeholder {
-  @include optional-at-root('::-webkit-input-placeholder') {
+  @include optional-at-root("::-webkit-input-placeholder") {
     @content;
   }
-  @include optional-at-root(':-moz-placeholder') {
+  @include optional-at-root(":-moz-placeholder") {
     @content;
   }
-  @include optional-at-root('::-moz-placeholder') {
+  @include optional-at-root("::-moz-placeholder") {
     @content;
   }
-  @include optional-at-root(':-ms-input-placeholder') {
+  @include optional-at-root(":-ms-input-placeholder") {
     @content;
   }
 }
@@ -300,39 +300,4 @@
   -ms-user-select: none;
   /* IE 10+ */
   user-select: none;
-}
-
-@mixin font-Izmir($size: 12px) {
-  font-family: 'Izmir', Arial, Helvetica, sans-serif;
-  font-size: $size;
-}
-
-@mixin font-Izmir-Thin($size: 12px) {
-  font-family: 'Izmir-Thin', Arial, Helvetica, sans-serif;
-  font-size: $size;
-}
-
-@mixin font-IzmirBold($size: 12px) {
-  font-family: 'Izmir-Bold', Arial, Helvetica, sans-serif;
-  font-size: $size;
-}
-
-@mixin font-IzmirExtraBold($size: 12px) {
-  font-family: 'Izmir-ExtraBold', Arial, Helvetica, sans-serif;
-  font-size: $size;
-}
-
-@mixin font-IzmirMaxExtraBold($size: 12px) {
-  font-family: 'Izmir-ExtraBold', Arial, Helvetica, sans-serif;
-  font-size: $size;
-}
-
-@mixin font-IzmirMedium($size: 12px) {
-  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
-  font-size: $size;
-}
-
-@mixin font-IzmirSemiBold($size: 12px) {
-  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
-  font-size: $size;
 }

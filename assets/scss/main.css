@@ -495,7 +495,7 @@
   background-color: #11001c;
   position: sticky;
   top: 0;
-  padding: 15px 20px;
+  padding: 15px 50px;
   display: flex;
   z-index: 99;
 }
@@ -514,6 +514,7 @@
 }
 .content p {
   color: white;
+  padding-top: 150px;
 }
 
 .responsive-menu .hamburger-menu {
@@ -566,15 +567,15 @@
 }
 
 /* Hamburger menü stilini buraya ekleyebilirsiniz */
-.headerLogo {
+.header-logo {
   font-family: "MuseoModerno", sans-serif;
   color: white;
   font-size: 30px;
 }
-.headerLogo span:nth-child(1) {
+.header-logo span:nth-child(1) {
   color: white;
 }
-.headerLogo span:nth-child(2) {
+.header-logo span:nth-child(2) {
   color: #98ff9c;
 }
 
@@ -674,13 +675,56 @@
 .background-item {
   position: absolute;
   right: 0;
-  width: 50%;
+  top: 0px;
+  width: 55%;
   z-index: -99;
 }
 
 .homepage-profile-picture {
   position: absolute;
-  right: 20px;
-  top: 65px;
+  right: 70px;
+  top: 185px;
   z-index: -9;
+  max-width: 40%;
+}
+
+.homepage-section-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  padding-top: 90px;
+}
+.homepage-section-text h1 {
+  font-size: 120px;
+  color: #f9f8e9;
+  line-height: 1;
+  padding-bottom: 30px;
+}
+.homepage-section-text span {
+  max-width: 500px;
+  color: white;
+  font-weight: 50;
+  font-size: 15px;
+}
+@media (max-width: 75em) {
+  .homepage-section-text span {
+    width: 100%;
+  }
+}
+
+.homepage-section {
+  padding-left: 55px;
+  min-height: 100vh;
+  max-width: 45%;
+}
+
+.homepage-section-socialmedias {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  max-width: 250px;
+}
+.homepage-section-socialmedias a img {
+  max-width: 25px;
 }/*# sourceMappingURL=main.css.map */

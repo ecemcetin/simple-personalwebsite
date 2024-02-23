@@ -1,0 +1,11 @@
+.homepage-section-socialmedias {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  max-width: 250px;
+  a {
+    img {
+      max-width: 25px;
+    }
+  }
+}

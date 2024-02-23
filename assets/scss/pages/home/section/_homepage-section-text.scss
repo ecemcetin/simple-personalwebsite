@@ -1,0 +1,22 @@
+.homepage-section-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  padding-top: 90px;
+  h1 {
+    font-size: 120px;
+    color: $color-text-light;
+    line-height: 1;
+    padding-bottom: 30px;
+  }
+  span {
+    max-width: 500px;
+    color: white;
+    font-weight: 50;
+    font-size: 15px;
+    @include mq(max-width, $xl) {
+      width: 100%;
+    }
+  }
+}
