@@ -20,7 +20,18 @@
     max-width: 1740px;
   }
 }
-.descriptionText {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a {
+  font-family: "Nunito", sans-serif;
+}
+
+.description-text {
   color: #11001c;
   font-family: "Roboto Mono", monospace;
   font-size: 45px;
@@ -517,7 +528,6 @@
   color: white;
   padding-top: 150px;
   padding-bottom: 25px;
-  font-family: "Nunito", sans-serif;
   font-size: 20px;
 }
 
@@ -617,7 +627,6 @@
 }
 .navbar-items li a {
   color: #f9f8e9;
-  font-family: "Nunito", sans-serif;
   font-weight: 100;
   font-size: 15px;
   text-decoration: none;
@@ -702,7 +711,6 @@
 .about-box-skills ul li span {
   color: #11001c;
   font-size: 14px;
-  font-family: "Nunito", sans-serif;
 }
 .about-box-skills span {
   color: #11001c;
@@ -719,13 +727,31 @@
 }
 .about-box-career h1 {
   color: #ffffed;
-  font-family: "Nunito", sans-serif;
   font-size: 70px;
 }
 .about-box-career span {
   font-size: 14px;
-  font-family: "Nunito", sans-serif;
   color: #ffffed;
+}
+
+.education-box {
+  padding: 20px;
+  width: 100%;
+  height: 450px;
+  background-color: #ffffed;
+  border-radius: 10px;
+}
+.education-box-item-header {
+  display: flex;
+  align-items: center;
+}
+.education-box-item-header h6 {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+.education-box-item-header img {
+  margin-right: 10px;
+  width: 25px;
 }
 
 ::-webkit-scrollbar {
@@ -771,7 +797,6 @@
 .homepage-section-text {
   display: flex;
   flex-direction: column;
-  font-family: "Nunito", sans-serif;
   font-weight: 100;
   padding-top: 90px;
 }

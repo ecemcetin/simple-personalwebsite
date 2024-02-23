@@ -10,7 +10,7 @@
 
 @import "global";
 
-@import "base/texts/descriptionText";
+@import "base/texts/description-text";
 @import "base/col/customCol";
 
 @import "layout/header/header";
@@ -21,6 +21,7 @@
 @import "components/header/header-logo";
 @import "components/header/navbar";
 @import "components/box/about-box";
+@import "components/box/education-box";
 @import "components/scrollbar/scrollbar";
 
 @import "pages/home/items/background-item";
