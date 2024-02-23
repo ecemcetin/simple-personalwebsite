@@ -29,6 +29,7 @@ h6,
 span,
 a {
   font-family: "Nunito", sans-serif;
+  text-decoration: none;
 }
 
 .description-text {
@@ -526,7 +527,7 @@ a {
 }
 .content .title {
   color: white;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 25px;
   font-size: 20px;
 }
@@ -738,20 +739,61 @@ a {
   padding: 20px;
   width: 100%;
   height: 450px;
+  overflow: scroll;
   background-color: #ffffed;
   border-radius: 10px;
 }
-.education-box-item-header {
+.education-box-item {
+  padding: 20px;
+}
+.education-box-item-header, .education-box-item-body {
   display: flex;
   align-items: center;
 }
-.education-box-item-header h6 {
+.education-box-item-header h6, .education-box-item-body h6 {
   margin-bottom: 0px;
   font-size: 16px;
 }
-.education-box-item-header img {
+.education-box-item-header img, .education-box-item-body img {
   margin-right: 10px;
   width: 25px;
+}
+.education-box-item-body {
+  padding-left: 8px;
+  padding-top: 10px;
+}
+.education-box-item-body img {
+  margin-right: 10px;
+  width: 8px;
+}
+.education-box-item-body span {
+  font-size: 14px;
+}
+
+.work-box {
+  padding: 20px;
+  border: 1px solid #98ff9c;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffed;
+}
+.work-box-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work-box-header img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.work-box-header h3 {
+  font-size: 18px;
 }
 
 ::-webkit-scrollbar {
