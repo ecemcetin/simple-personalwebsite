@@ -32,11 +32,17 @@ a {
   text-decoration: none;
 }
 
+.description, .description-text, .description-title {
+  color: #98ff9c;
+  font-family: "Nunito", sans-serif;
+}
+.description-title {
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
 .description-text {
-  color: #11001c;
-  font-family: "Roboto Mono", monospace;
-  font-size: 45px;
-  font-weight: 400;
+  font-size: 16px;
 }
 
 /* adding col-xxl */

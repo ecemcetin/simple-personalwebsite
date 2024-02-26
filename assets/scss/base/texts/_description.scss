@@ -1,0 +1,14 @@
+.description {
+  color: $color-main-auxiliary;
+  font-family: "Nunito", sans-serif;
+  &-title {
+    @extend .description;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 25px;
+  }
+  &-text {
+    @extend .description;
+    font-size: 16px;
+  }
+}
