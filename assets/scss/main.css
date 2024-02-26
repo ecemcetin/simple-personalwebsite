@@ -503,6 +503,36 @@ a {
     margin-left: auto !important;
   }
 }
+.slider {
+  padding: 0px 25px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.slider .slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+}
+.slider .slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 25%;
+  height: 100%;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   width: 100%;
   background-color: #11001c;
@@ -794,6 +824,12 @@ a {
 }
 .work-box-header h3 {
   font-size: 18px;
+}
+.work-box-body {
+  text-align: center;
+}
+.work-box:hover {
+  border: 1px solid #ffffed;
 }
 
 ::-webkit-scrollbar {

@@ -9,3 +9,5 @@ menuToggle.addEventListener("change", function () {
     navbarItems.style.display = "flex";
   }
 });
+
+$(".carousel").carousel();
